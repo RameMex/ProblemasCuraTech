@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import CountingValleys from './CountingValleys'
 
 const Problem1 = () =>{
     const [FormData, setFormData] = useState({
@@ -6,8 +7,8 @@ const Problem1 = () =>{
         StringPath: ''
     })
     const funs = (e) =>{
-        e.preventDefault();
-        
+        e.preventDefault(); 
+        CountingValleys(FormData.Steps,FormData.StringPath);
     }
     const handleChange = (e) =>{
         setFormData({
