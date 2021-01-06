@@ -1,10 +1,11 @@
 import React,{useState} from 'react';
-
+import TransformData from './TransformData'
 const MilkMerchant = (n,ar) =>{
     var Conf = false;
     var ArrayAux=[];
     var sum = 0;
     var Pares = 0;
+    [n,ar] = TransformData(n,ar);
 
     ArrayAux.push([{'Numero' :ar[0] , 'Sum':0}])
     if(!Conf) return
@@ -47,4 +48,4 @@ const MilkMerchant = (n,ar) =>{
 }
 
 
-export default MilkMerchant
+export default MilkMerchant;
