@@ -1,4 +1,5 @@
 import React,{useState} from 'react';
+import MilkMerchant from './MilkMerchant';
 
 const Problem1 = () =>{
     const [FormData, setFormData] = useState({
@@ -7,7 +8,7 @@ const Problem1 = () =>{
     })
     const funs = (e) =>{
         e.preventDefault();
-        
+        MilkMerchant(FormData.n,FormData.ar);
     }
     const handleChange = (e) =>{
         setFormData({
