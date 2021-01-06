@@ -1,10 +1,12 @@
-import React from 'react'
+import React from 'react';
+import TransformData from './TransformData';
 
 const CountingValleys = (Steps,StringPath)=>{
     var Conf = false;
     var sumStringPath = 0;
     var numberOfValle = 0;
     var detectValle = true;
+    [Steps,StringPath] = TransformData(Steps,StringPath);
 
 
     for (let x = 0; x < Steps; x++) {
