@@ -120,9 +120,12 @@ Ya con esta informacion pase al siguiente punto.
 <h2 align="center">
   <img alt="Resultado Problema 2" src="curatechpruebas/resultP2.png">
 </h2>
+
+
 ## Problema 3
     `Logica.js` Aqui fue solamente sacar el residuo de los valores pedidos.
 * Cree un for que recorria el arreglo antes creado con 100 valores de 1 al 100, en el solo se sacaba el residuo de la cantidad que pedia que fuese su multiplo, si el residuo es == a 0 entonces es un multiplo de ese valor. Ejemplo: `9 % 3 = 0 y 3 * 3 = 9`
+
 
 <h2 align="center">
   <img alt="Resultado Problema 3" src="curatechpruebas/resultP3.png">
