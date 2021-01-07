@@ -6,7 +6,7 @@
   * [**Problema 3**](#problema3)
   
   
-## Como Solucione los problemas(#Como Solucione-los-problemas)
+## Como Solucione los problemas (#Como-Solucione-los-problemas)
 Para solucionar los problemas y matener un codigo legible decidi separarlo en 4 archivos fundamentales.
 * `Index.js` Habia un index para cada problema. Simplemente se encargaria de la UI, por lo cual quite la logica del problema y lo maneje en una funcion externa.
 * `(MilkMerchant.js, CountingValleys.js o Logica.js)` Cada uno de estos maneja la logica necesaria para resolver cada uno de los problemas.
@@ -14,7 +14,7 @@ Para solucionar los problemas y matener un codigo legible decidi separarlo en 4 
 * `(ErrorMessage)` Aqui es donde yo manejo los errores de las entradas de datos, en caso de que hubiese alguna clase de error este los detectara y lanzara una alerta.
 
 
-## Problema 1(#problema1)
+## Problema 1 (#problema1)
     `MilkMerchant.js` Centrandome en la logica pura, separe los problemas en 2.
 * Detectar la cantidad de elementos por cada etiqueta de cada uno.
 
@@ -63,7 +63,7 @@ Aqui esta recorriendo el arreglo y busca el residuo, si el residuo es diferente 
 | where 0 ≤ i < n                                   |(Output) p:  number of matching pairs         |
 
 
-## Problema 2(#problema2)
+## Problema 2 (#problema2)
     `CountingValleys.js` Este fue mas sencillo aunque tambien era separarlo en 2 partes.
 * Transformar U: 1 y D: -1.
 Esto de cambiar las letras por numeros da una simplicidad ya que solemente tienes que sumarlos y puedes saber en que region de un plano cartesiano se ecuentra. Lo del plano es importante porque podemos tener 2 cambios de `+ a -` y de `- a +`  , a nosotros nos interesa saber cuando pasa de `- a +` porque ahi es donde sumamos un Valle, y simplemente sabiendo que esta en el plano negativo sabemos que tuvo que estar en el plano positivo o en un punto inicial  `= 0`.
@@ -110,3 +110,5 @@ Ya con esta informacion pase al siguiente punto.
 | 2 ≤ steps ≤ 10⁶                                   |(Input)  int steps: the number of steps on the hike  |
 | path[i] ϵ {Ʊ Ɗ}                                   |(Input)  string path: a string describing the path   |
 |                                                   |(Output) int: the number of valleys traversed        |
+
+
