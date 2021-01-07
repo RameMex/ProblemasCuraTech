@@ -1,7 +1,7 @@
 import React from 'react'
 
 const ErrorMessage = (n,ar) => {
-
+    
     if(!Number.isInteger(n)){
         alert('Introdusca un valor o un valor tipo numerico en las Cantidad de cajas de leche');
         return false;

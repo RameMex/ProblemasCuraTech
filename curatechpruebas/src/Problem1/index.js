@@ -1,14 +1,19 @@
 import React,{useState} from 'react';
 import MilkMerchant from './MilkMerchant';
-
+import Button from '@material-ui/core/Button';
+import TextField from '@material-ui/core/TextField';
+import Grid from '@material-ui/core/Grid';
+import Paper from '@material-ui/core/Paper'
 const Problem1 = () =>{
     const [FormData, setFormData] = useState({
         n: '',
         ar: ''
     })
+    const [Pares, setPares] = useState(0);
     const funs = (e) =>{
         e.preventDefault();
-        MilkMerchant(FormData.n,FormData.ar);
+        setPares(MilkMerchant(FormData.n,FormData.ar));
+
     }
     const handleChange = (e) =>{
         setFormData({
@@ -18,19 +23,30 @@ const Problem1 = () =>{
     }
     return (
         <div>
-            <h1>
-                Problema 1
-            </h1>
-            <form onSubmit={funs}>
-                <div>
-                    <label>Numero de milk</label>
-                    <input type='text' name='n' onChange={handleChange} />
-                    <label>Arreglo</label>
-                    <input type='text' name='ar' onChange={handleChange} />
-                </div>
-                <button type='submit'>Subir</button>
-            </form>
-
+            <Grid container justify = "center" >
+                    <h2>Problema 1</h2>
+            </Grid>
+            <Grid container justify = "center" spacing={3}>
+                <br/>
+                <Grid item xs={4}>
+                    <Paper elevation={3}>
+                        <form onSubmit={funs} noValidate autoComplete="off">
+                            <div>
+                                <TextField id="outlined-basic" label="Cantidad de milk" variant="outlined" type='text' name='n' onChange={handleChange} />
+                                <TextField id="outlined-basic" label="Variantes de milk" variant="outlined" type='text' name='ar' onChange={handleChange} />
+                            </div>
+                            <br/>
+                            <Button type='submit' variant="contained" justify = "center" color="secondary">Subir</Button>
+                        </form>
+                    </Paper>
+                </Grid>
+            </Grid>
+            <Grid justify = "center" item xs={6}>
+                <Paper elevation = {5} justify = "center">
+                    <h1>Resultado</h1>
+                    <h2>{Pares}</h2>
+                </Paper>
+            </Grid>
         </div>
     )
 }

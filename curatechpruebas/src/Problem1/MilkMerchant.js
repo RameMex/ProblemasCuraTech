@@ -7,8 +7,10 @@ const MilkMerchant = (n,ar) =>{
     var ArrayAux=[];
     var sum = 0;
     var Pares = 0;
+
     [n,ar] = TransformData(n,ar);
     Conf = ErrorMessage(n,ar)
+    
     ArrayAux.push([{'Numero' :ar[0] , 'Sum':0}]);
     if(!Conf) return;
     
@@ -28,23 +30,22 @@ const MilkMerchant = (n,ar) =>{
             ArrayAux.push([{'Numero': ar[x] ,'Sum':1}]);
         }
     }
-    console.log(ArrayAux[0][0])
     for (let x = 0; x < ArrayAux.length; x++) {
         if( !(ArrayAux[x][0].Sum == 1)){
+
             if( ArrayAux[x][0].Sum % 2 != 0){
+
                 Pares = Pares + ((ArrayAux[x][0].Sum - 1) / 2 );
+
             }else{
+
                 Pares = Pares + ((ArrayAux[x][0].Sum) / 2 );
             }
             
         }
         
     }
-        
-    console.log(Pares);
-    return (
-        <h1>Probando</h1>
-    )
+    return Pares
 
 }
 

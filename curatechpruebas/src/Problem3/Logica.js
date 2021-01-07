@@ -20,9 +20,7 @@ const Logica = ()=>{
     }
     console.log(arr)
     return(
-        <div>
-            
-        </div>
+        arr
     )
 }
 export default Logica;

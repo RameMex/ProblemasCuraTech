@@ -22,5 +22,8 @@ const CountingValleys = (Steps,StringPath)=>{
         }
     }
     console.log(numberOfValle)
+    return(
+        numberOfValle
+    )
 }
 export default CountingValleys;
