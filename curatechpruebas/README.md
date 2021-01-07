@@ -6,7 +6,7 @@
   * [**Problema 3**]
   
  <h2 align="center">
-  <img alt="Menu Principal" src="menuImg.png">
+  <img alt="Menu Principal" src="src/menuImg.png">
 </h2>
 ## Como Solucione los problemas 
 Para solucionar los problemas y matener un codigo legible decidi separarlo en 4 archivos fundamentales.
@@ -65,7 +65,7 @@ Aqui esta recorriendo el arreglo y busca el residuo, si el residuo es diferente 
 | where 0 ≤ i < n                                   |(Output) p:  number of matching pairs         |
 
 <h2 align="center">
-  <img alt="Resultado Problema 1" src="resultP1.png">
+  <img alt="Resultado Problema 1" src="src/resultP1.png">
 </h2>
 
 ## Problema 2 
@@ -116,12 +116,12 @@ Ya con esta informacion pase al siguiente punto.
 | path[i] ϵ {Ʊ Ɗ}                                   |(Input)  string path: a string describing the path   |
 |                                                   |(Output) int: the number of valleys traversed        |
 <h2 align="center">
-  <img alt="Resultado Problema 2" src="resultP2.png">
+  <img alt="Resultado Problema 2" src="src/resultP2.png">
 </h2>
 ## Problema 3
     `Logica.js` Aqui fue solamente sacar el residuo de los valores pedidos.
 * Cree un for que recorria el arreglo antes creado con 100 valores de 1 al 100, en el solo se sacaba el residuo de la cantidad que pedia que fuese su multiplo, si el residuo es == a 0 entonces es un multiplo de ese valor. Ejemplo: `9 % 3 = 0 y 3 * 3 = 9`
 
 <h2 align="center">
-  <img alt="Resultado Problema 3" src="resultP3.png">
+  <img alt="Resultado Problema 3" src="src/resultP3.png">
 </h2>
