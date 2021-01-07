@@ -8,6 +8,8 @@
  <h2 align="center">
   <img alt="Menu Principal" src="menuImg.png">
 </h2>
+
+
 ## Como Solucione los problemas 
 Para solucionar los problemas y matener un codigo legible decidi separarlo en 4 archivos fundamentales.
 * `Index.js` Habia un index para cada problema. Simplemente se encargaria de la UI, por lo cual quite la logica del problema y lo maneje en una funcion externa.
