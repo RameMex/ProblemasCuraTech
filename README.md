@@ -6,7 +6,7 @@
   * [**Problema 3**]
   
  <h2 align="center">
-  <img alt="Menu Principal" src="menuImg.png">
+  <img alt="Menu Principal" src="curatechpruebas/menuImg.png">
 </h2>
 
 
@@ -67,7 +67,7 @@ Aqui esta recorriendo el arreglo y busca el residuo, si el residuo es diferente 
 | where 0 ≤ i < n                                   |(Output) p:  number of matching pairs         |
 
 <h2 align="center">
-  <img alt="Resultado Problema 1" src="resultP1.png">
+  <img alt="Resultado Problema 1" src="curatechpruebas/resultP1.png">
 </h2>
 
 ## Problema 2 
@@ -118,7 +118,7 @@ Ya con esta informacion pase al siguiente punto.
 | path[i] ϵ {Ʊ Ɗ}                                   |(Input)  string path: a string describing the path   |
 |                                                   |(Output) int: the number of valleys traversed        |
 <h2 align="center">
-  <img alt="Resultado Problema 2" src="resultP2.png">
+  <img alt="Resultado Problema 2" src="curatechpruebas/resultP2.png">
 </h2>
 
 
@@ -128,5 +128,5 @@ Ya con esta informacion pase al siguiente punto.
 
 
 <h2 align="center">
-  <img alt="Resultado Problema 3" src="resultP3.png">
+  <img alt="Resultado Problema 3" src="curatechpruebas/resultP3.png">
 </h2>
