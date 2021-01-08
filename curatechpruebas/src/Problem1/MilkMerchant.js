@@ -10,7 +10,7 @@ const MilkMerchant = (n,ar) =>{
 
     [n,ar] = TransformData(n,ar);
     Conf = ErrorMessage(n,ar)
-    
+
     ArrayAux.push([{'Numero' :ar[0] , 'Sum':0}]);
     if(!Conf) return;
     
